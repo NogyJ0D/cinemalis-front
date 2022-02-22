@@ -5,8 +5,8 @@ export default async function axiosRequest (url, method, body) {
     url,
     method,
     data: body,
-    headers: { 'Content-Type': 'application/json' },
-    withCredentials: true
+    headers: { 'Content-Type': 'application/json' }
+    // withCredentials: true
   })
     .then(res => { return res })
     .then(data => {

@@ -23,7 +23,7 @@ const MyReviews = ({ userRole }) => {
       <div className='flex flex-col'>
         {
           myReviews.length > 0
-            ? myReviews.map(review => <UpdateReview key={review._id} reviewId={review._id} movieId={review.movieId} movieName={review.movieName} text={review.text} rating={review.rating} date={review.date} userId={review.userId} />)
+            ? myReviews.map(review => <UpdateReview key={review._id} reviewId={review._id} movieId={review.movieId} movieName={review.movieName} text={review.text} rating={review.rating} date={review.date} userId={review.userIdn} />)
             : <h3 className='text-2xl font-bold text-center'>Sin reseñas</h3>
         }
       </div>
